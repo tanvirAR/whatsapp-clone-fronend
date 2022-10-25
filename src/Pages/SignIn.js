@@ -7,7 +7,7 @@ import classes from "../styles/SignInPage/Signin.module.css";
 export default function Login() {
 
 useEffect(()=> {
-document.title = 'WatsApp-AR - SignIn'
+document.title = 'WhatsApp-AR - SignIn'
 },[])
 
   // const a = useSelector((state) => state.auth);
