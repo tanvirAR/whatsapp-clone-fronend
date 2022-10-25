@@ -13,6 +13,7 @@ import {
   PartnerAvatarChange,
   ShowConversationMessages,
   ViewConversationPartnerInfobar,
+   ChangeConversationId
 } from "../../../features/UI/UISlice";
 import classes from "../../../styles/Inbox/Inbox.module.css";
 import styles from "../../../styles/Inbox/SidebarHeader.module.css";
@@ -43,7 +44,8 @@ function RightSideHeader() {
   const closeMessageHandler = async () => {
     //first close contact info bar if open
     await dispatch(ViewConversationPartnerInfobar(false));
-    dispatch(ShowConversationMessages(false));
+   await dispatch(ShowConversationMessages(false));
+    dispatch(ChangeConversationId(undefined));
   };
 
   useEffect(() => {
