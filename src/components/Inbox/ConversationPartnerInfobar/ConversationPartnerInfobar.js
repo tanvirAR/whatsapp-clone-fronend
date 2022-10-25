@@ -65,7 +65,7 @@ function ConversationPartnerInfobar() {
           className={styles.IMAGECONTAINER}
         >
           {" "}
-          <label htmlFor="file">
+          <label >
             <img
               className={styles.profilePicture}
               src={
