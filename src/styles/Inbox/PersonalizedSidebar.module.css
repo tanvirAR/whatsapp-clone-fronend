@@ -1,0 +1,300 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  color: #303030;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: none;
+}
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+  background: #344045;
+}
+
+/* Handle on hover */
+
+::-webkit-scrollbar-thumb:hover {
+  background: #344045;
+}
+
+h4 {
+  font-weight: 400;
+}
+
+/* ..........................Personalized....................... */
+.sidebar {
+  flex: 5.17;
+  flex-direction: column;
+  min-width: 320px;
+  height: 100vh;
+  background-color: #111b21;
+  /* border-right: 1px solid white; */
+}
+
+.head {
+  width: 100%;
+  height: 130px;
+  background: red;
+  display: flex;
+  flex-direction: column;
+  /* align-items: flex-end; */
+}
+
+.header {
+  height: 100%;
+  background: rgb(62, 91, 254);
+  width: 100%;
+  display: flex;
+  flex-direction: column !important;
+  align-items: flex-end !important ;
+}
+
+.ProfileName {
+  background-color: #202c33;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  /* justify-self: start; */
+  /* margin-right: 10px !important; */
+  margin-top: -10px;
+  margin-right: -20px;
+  color: white;
+}
+
+.ProfileName svg {
+  margin-top: 40px;
+  margin-right: 20px;
+  margin-left: 25x !important;
+  cursor: pointer;
+}
+
+.ProfileName p {
+  font-size: large;
+  margin-top: 55px;
+  font-style: normal;
+  color: white;
+  /* margin-left: 20px; */
+}
+
+/* .........................................*/
+
+.IMAGE {
+  width: 100%;
+  height: 260px;
+  background: #111b21;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.IMAGECONTAINER {
+  align-items: center;
+  user-select: none;
+}
+
+/* .IMAGE .text {
+  position: absolute;
+  top: 60px;
+  left: 50px;
+} */
+
+.IMAGE .text1 {
+  position: absolute;
+  top: 130px;
+  left: 115px;
+  font-size: small;
+  z-index: 3;
+  /* color: whitesmoke; */
+  color: transparent;
+  text-shadow: 0 0 0.5px rgb(255, 249, 249);
+}
+.IMAGE .text2 {
+  position: absolute;
+  top: 145px;
+  font-size: small;
+  left: 135px;
+  z-index: 3;
+  /* color: whitesmoke; */
+  color: transparent;
+  text-shadow: 0 0 0.5px white;
+}
+.IMAGE .profilePicture {
+  align-items: center;
+  justify-content: center;
+  height: 160px;
+  width: 160px;
+  border-radius: 50%;
+  z-index: 1;
+  /* margin-left: 20px; */
+  position: relative;
+  /* filter: blur(1px); */
+  cursor: pointer;
+}
+.IMAGE .cameraLogo {
+  position: absolute;
+  left: 150px;
+  top: 110px;
+  height: 25px;
+  z-index: 2;
+  filter: invert(100%);
+  cursor: pointer;
+}
+
+@media (min-width: 1600px) {
+  .IMAGE .cameraLogo {
+    position: absolute;
+    left: 230px;
+    top: 120px;
+    height: 25px;
+    z-index: 2;
+  }
+  .IMAGE .text1 {
+    top: 145px;
+    left: 200px;
+    cursor: pointer;
+  }
+  .IMAGE .text2 {
+    top: 160px;
+    left: 220px;
+    cursor: pointer;
+  }
+}
+
+.yourName {
+  margin-left: 40px;
+  font-size: medium;
+  color: #3c805f;
+  user-select: none;
+}
+.userName {
+  display: flex;
+  width: 100%;
+  height: 40px;
+  background: #111b21;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #0b141a;
+}
+.userName p {
+  margin-left: 40px;
+  margin-top: 12px;
+  color: white;
+  font-size: large;
+  cursor: default;
+}
+
+.editIcon {
+  height: 20px;
+  margin-right: 20px;
+  width: 17px;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-drag: none;
+  filter: invert(100%);
+}
+
+.info {
+  margin-left: 40px;
+  margin-top: 10px;
+  color: white;
+  font-weight: lighter !important;
+  cursor: default;
+}
+
+.about {
+  margin-left: 40px;
+  font-size: medium;
+  margin-top: 30px;
+  color: #3c805f;
+  user-select: none;
+}
+.status {
+  font-size: medium !important;
+}
+
+/* .profileInfo {
+  background: red;
+  cursor: pointer;
+} */
+
+/* ..........................Personalized....................... */
+
+/* ................................conversation........ */
+
+.sidebar-search-container .searchContainer {
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-search-container .dropdown {
+  background: white;
+  display: flex;
+  flex-direction: column;
+  /* border: 1px solid black; */
+}
+
+.sidebar-search-container .dropdown-row {
+  cursor: pointer;
+  text-align: center;
+  margin: 2px 0;
+}
+/* ................................conversation........ */
+
+.main {
+  display: flex;
+  overflow: hidden;
+  width: inherit;
+  height: 100vh;
+}
+
+.message-container {
+  flex: 12;
+  min-width: 500px;
+}
+
+.header {
+  background-color: #111b21;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+  /* margin-top: 4px; */
+}
+
+p {
+  font-style: normal !important;
+  color: white;
+}
+
+.nameInput {
+  flex: 20;
+  margin: 5px 10px;
+  padding: 8px 15px;
+  outline: none;
+  color: white;
+  caret-color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 18px;
+  background: #111b21;
+  color: #3c805f;
+  margin-left: 23px;
+  /* background: gray; */
+}
+
+.status {
+  font-size: 16px;
+}

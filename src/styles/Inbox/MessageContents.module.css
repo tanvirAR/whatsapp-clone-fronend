@@ -1,0 +1,10 @@
+.noMessage {
+  text-align: center;
+  color: rgb(191, 176, 91);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  background: #2a3942;
+  margin-left: 30px;
+  margin-right: 10%;
+  border-radius: 5px;
+}
