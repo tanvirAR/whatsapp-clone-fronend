@@ -12,7 +12,8 @@ export default function OptionsPopUp({ setPopup }) {
     console.log(data)
     if(data!==undefined){
       
-navigate('/signup');
+navigate('/');
+      window.location.reload();
     }
   },[data, ])
 
