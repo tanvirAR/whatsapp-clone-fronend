@@ -24,13 +24,15 @@ document.title = 'WhatsApp-AR - SignIn'
   const [login, { data, isLoading, error: responseError }] = useLoginMutation();
 
   useEffect(() => {
-    if (data?.data.errors) {
+    console.log(data)
+    if (data?.data.errors ===true) {
       // navigate("/inbox");
       console.log('sssssssssssssssssssssssssssssssssssssssssssssss');
       setError(data.data.errors.common.msg);
-      console.log("failed");
+//       console.log("failed");
     } else if (!data?.data.errors && data !== undefined) {
-      console.log(data);
+      console.log('sssssssssssssssssssssssssssssssssssssssssssssss');
+//       console.log(data);
 //       navigate("/inbox");
     }
   }, [data, responseError, navigate]);
