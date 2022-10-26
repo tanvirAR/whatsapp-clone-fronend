@@ -27,7 +27,7 @@ document.title = 'WhatsApp-AR - SignIn'
     if (data?.data.errors) {
       // navigate("/inbox");
       console.log(data.errors);
-      setError(data.errors.common.msg);
+      setError(data.data.errors.common.msg);
       console.log("failed");
     } else if (!data?.data.errors && data !== undefined) {
       console.log(data);
