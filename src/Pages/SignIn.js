@@ -26,12 +26,12 @@ document.title = 'WhatsApp-AR - SignIn'
   useEffect(() => {
     if (data?.data.errors) {
       // navigate("/inbox");
-      console.log(data.errors);
+      console.log('sssssssssssssssssssssssssssssssssssssssssssssss');
       setError(data.data.errors.common.msg);
       console.log("failed");
     } else if (!data?.data.errors && data !== undefined) {
       console.log(data);
-      navigate("/inbox");
+//       navigate("/inbox");
     }
   }, [data, responseError, navigate]);
 
