@@ -25,12 +25,12 @@ document.title = 'WhatsApp-AR - SignIn'
 
   useEffect(() => {
     console.log(data)
-    if (data?.data.errors ===true) {
+    if (data?.errors ===true) {
       // navigate("/inbox");
       console.log('eeeeeeeeeeeeeeeeeeeeerrrrrrrrrrrrrrrrrrrrrrrr');
-      setError(data.data.errors.common.msg);
+      setError(data.errors.common.msg);
 //       console.log("failed");
-    } else if (!data?.data.errors && data !== undefined) {
+    } else if (!data?.errors && data !== undefined) {
       console.log('sssssssssssssssssssssssssssssssssssssssssssssss');
 //       console.log(data);
 //       navigate("/inbox");
