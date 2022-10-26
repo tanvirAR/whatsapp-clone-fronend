@@ -62,12 +62,12 @@ function Footer() {
       formData.append("name", UserName);
       formData.append("receiverName", BuddyName);
 
-      await editConversation({
+       editConversation({
         message: message ? message : "You: sent a photo",
         conversationId: conversationId,
         time: Date.now(),
       });
-      await sendMessages({ formData, conversationId, userId });
+       sendMessages({ formData, conversationId, userId });
       setFile("");
       setMessage("");
     }
