@@ -24,6 +24,7 @@ document.title = 'WhatsApp-AR - SignIn'
   const [login, { data, isLoading, error: responseError }] = useLoginMutation();
 
   useEffect(() => {
+    console.log(error)
     console.log(data)
     if (data?.errors ===true) {
       // navigate("/inbox");
@@ -96,7 +97,7 @@ document.title = 'WhatsApp-AR - SignIn'
                 }
                 className={classes.error}
               >
-                {error}
+                {error || responseError}
               </p>
             )}
 
