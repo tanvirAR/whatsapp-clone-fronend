@@ -5,7 +5,7 @@ import { useLogoutMutation } from "../../../features/auth/authApi";
 import styles from "../../../styles/Inbox/Sidebar.module.css";
 
 export default function OptionsPopUp({ setPopup }) {
-  const [logout, {data}] = useLogoutMutation();
+  const [logout, {data, isLoading}] = useLogoutMutation();
   const navigate = useNavigate()
 
   useEffect(() => {
@@ -24,8 +24,11 @@ navigate('/');
 
   return (
     <div className={styles.optionsBar}>
-      <p onClick={logoutHandler} className={styles.p2}>
+  <button disabled={isLoading} id='button' style={{display: 'none'}} />
+      <p htmlFor='button' onClick={logoutHandler} className={styles.p2}>
+        
         Logout
+
       </p>
     </div>
   );
